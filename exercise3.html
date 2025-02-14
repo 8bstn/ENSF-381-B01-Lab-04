@@ -28,8 +28,22 @@
 				details: {semester: 'Winter', year: 2025}
 			}
 
-			Object.defineProperties(classInfo, "a", {value: ["Monday", "Wednesday", "Friday"]})
+			classInfo.schedule = ["Monday", "Wednesday", "Friday"]
 			classInfo.instructor = 'Dr. Abdellatif'
+			console.log(classInfo.className)
+			console.log(classInfo.students)
+			console.log(classInfo.details.semester)
+			console.log(classInfo)
+			let {className, students} = classInfo
+			console.log(className)
+			console.log(students)
+			let {semester, year} = classInfo.details
+			console.log(semester)
+			console.log(year)
+			let [student1, student2, ...remainingStudents] = classRoster
+			console.log(student1)
+			console.log(student2)
+			console.log(remainingStudents)
 
 		</script>
 
