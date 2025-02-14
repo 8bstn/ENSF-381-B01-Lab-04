@@ -41,10 +41,19 @@
       let multiply = (a, b) => a * b;
 
       // divide function
-      let divide = (a, b) => a / b;
+      let divide = (a, b) => {
+        if (b == 0) {
+          console.log("Error. Division by zero was attempted. Please try again with a different 'b' value.");
+        } else {
+          return a / b;
+        } 
+      }
       // test functions
-      console.log(add(5));
-      console.log(subtract(5));
+      console.log(add(5, 2));
+      console.log(subtract(5, 2));
+      console.log(multiply(5, 2));
+      console.log(divide(5, 0));
+      console.log(divide(5, 2));
     </script>
   </body>
 </html>
