@@ -48,12 +48,27 @@
           return a / b;
         } 
       }
+
+      // Understanding Callback Functions
+      function calculator (a, b, callback) {
+        if (callback == add) {
+          console.log("The sum of ${a} and ${b} is:");
+        }
+
+        if (callback == multiply) {
+          console.log("The product of ${a} and ${b} is:");
+        }
+
+        return callback(a, b);
+      }
       // test functions
       console.log(add(5, 2));
       console.log(subtract(5, 2));
       console.log(multiply(5, 2));
       console.log(divide(5, 0));
       console.log(divide(5, 2));
+      console.log(calculator(8, 4, add));
+      console.log(calculator(8, 4, multiply));
     </script>
   </body>
 </html>
