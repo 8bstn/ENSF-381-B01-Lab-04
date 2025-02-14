@@ -7,8 +7,9 @@
     <h1>JavaScript Lab</h1>
     <script>
       // Write your JavaScript code here
-
+      // Declaring Functions
       // add function
+      /*
       function add(a, b) {
         return a + b;
       }
@@ -17,7 +18,33 @@
       function subtract(a, b) {
         return a - b;
       }
-      
+
+      // Using Default Parameters
+      // add function copy
+      function add(a, b = 0) {
+        return a + b;
+      }
+
+      // subtract function copy
+      function subtract(a, b = 6) {
+        return a - b;
+      }
+      */
+      // Implementing Arrow Functions
+      // add function
+      let add = (a, b) => a + b;
+
+      // subtract function
+      let subtract = (a, b) => a - b;
+
+      // multiply function
+      let multiply = (a, b) => a * b;
+
+      // divide function
+      let divide = (a, b) => a / b;
+      // test functions
+      console.log(add(5));
+      console.log(subtract(5));
     </script>
   </body>
 </html>
