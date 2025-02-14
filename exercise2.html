@@ -53,16 +53,16 @@
       // Understanding Callback Functions
       function calculator (a, b, callback) {
         if (callback == add) {
-          console.log("The sum of ${a} and ${b} is:");
+          let statement = `The sum of ${a} and ${b} is: ${callback(a, b)}`;
+          return statement;
         }
 
         if (callback == multiply) {
-          console.log("The product of ${a} and ${b} is:");
+          let statement = `The product of ${a} and ${b} is: ${callback(a, b)}`;
+          return statement;
         }
-
-        return callback(a, b);
       }
-      
+
       // test functions
       console.log(add(5, 2));
       console.log(subtract(5, 2));
